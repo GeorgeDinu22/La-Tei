@@ -37,11 +37,11 @@
 <script>
     function ShowSideBar () {
         const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
+        sidebar.classList.add('open');
     }
     function CloseSideBar () {
         const sidebar = document.querySelector ('.sidebar')
-        sidebar.style.display =  'none'
+        sidebar.classList.remove('open');
     }
 </script>
 
