@@ -1,0 +1,416 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+.header {
+    display:flex;
+    background-color: rgb(69, 209, 38);
+    height: 140px;
+    width: 100vw;
+    align-items: center;
+    overflow: visible;
+}
+
+.rama {
+    margin-right:0;
+    height: 100%;
+}
+
+.logo {
+    height: 100%; 
+    width: 160px;
+}
+
+.navbar {
+    margin: auto;
+}
+
+.navbar-list{
+    list-style-type: none ;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar-list a:hover {
+    box-shadow: 0 8px 12px rgb(57, 192, 0);
+    justify-content: center;
+}
+
+.navbar a i{
+    margin-right: 8px;
+    color: rgb(255, 255, 255);
+    font-size:clamp(10px,3vw,60px);
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin:2vw;
+    padding: 12px;
+    border-radius: 50px;
+    font-size:clamp(10px,2vw,60px);
+}
+.header li {
+    list-style-type: none;
+}
+
+
+#deschide-sidebar{
+    margin-right: 4vw;
+    color:rgb(255, 255, 255);
+    list-style-type: none;
+    font-size:clamp(30px,5vw,50px);
+    padding: 10px;
+    border: 2px solid;
+}
+
+#inchide-sidebar {
+    font-size:clamp(30px,5vw,50px);
+}
+
+
+
+.sidebar {
+    padding:20px;
+    margin-top: 0;
+    list-style-type: none ;
+    display: flex;
+    position:fixed;
+    top:0;
+    right:-100%;
+    height: 100vh;
+    width: 36vw;
+    z-index:999;
+    background-color: rgba(255, 255, 255, 0.225);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    gap:36px;
+    transition: right 500ms linear;
+}
+
+
+.sidebar.open {
+    right: 0; 
+}
+
+
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgb(170, 170, 170);
+    border: 1px solid white;
+    background-color: rgba(209, 209, 209, 0.433);
+    width: calc(100% + 29px);
+    height:50px;
+}
+
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.sidebar a i{
+    margin-right: 8px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width:949px) {
+    .HideOnMobile{
+        display: none;
+    }
+}
+
+@media (min-width:950px) {
+    #deschide-sidebar {
+        display: none;
+    }
+}
+
+
+
+@media (min-width:500px) {
+    .sidebar li a {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+        height: 100px;
+    }
+    .logo {
+        width: 120px;
+    }
+}
+
+/* aici se termina sectiunea header */
+
+.sub-body {
+    flex-wrap:wrap;
+    overflow-x: hidden;
+    margin-top: 35px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+.container-1 {
+    margin-bottom: 28px;
+}
+
+
+.locatie {
+    /*font-size: clamp(20px, 2vh, 400px);*/
+    font-size: 2em;
+    margin-bottom: 55px;
+}
+
+
+.program {
+    font-size: 2em;
+    margin-bottom: 55px;
+}
+
+.mesaj {
+    text-decoration: none;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+.nr-tel  {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.mail {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.mail .continut a {
+    color: red;
+    margin-top: 10px;
+}
+
+.mail a {
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    transition: text-decoration ease-in-out 1s;
+}
+
+
+.intrebare {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 2.5px;
+    color: rgb(69, 209, 38);
+}
+
+.intrebare i {
+    font-size: .8em;
+}
+
+.continut {
+    margin-top: 10px;
+}
+.continut a {
+    color: black;
+    text-decoration: none;
+}
+
+.mail a:hover{
+    text-decoration: underline;
+}
+
+.nr-tel:hover {
+    text-decoration: underline;
+}
+
+.maps-google {
+    border-radius: 50px;
+    overflow: hidden;
+    width: clamp(400px,35vw,800px);
+}
+
+.container-2 {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .header {
+        overflow-x: hidden;
+    }
+
+    .container-1 {
+        margin: auto;
+    }
+    .locatie {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .program {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .mesaj {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .mail {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .sub-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-2 {
+        margin-top: 20px;
+        width:80%;
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    .maps-google {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .intrebare i {
+        font-size:clamp(20px,2.5vw,40px);
+    }
+
+    .mail a {
+        font-size:24px;
+        font-weight: bold;
+    }
+    .intrebare {
+        font-weight: bold;
+        font-size:clamp(24px,1.5vw,40px);
+        padding-left:0;
+        color: rgb(69, 209, 38);
+    }
+
+    .navbar-list {
+    }
+
+    .header {
+    }
+    .program .continut{
+        font-size: 24px;
+    }
+    .locatie .continut{
+        font-size: 24px;
+    }
+    .mesaj .continut{
+        font-size: 24px;
+    }
+
+    .continut {
+        font-size: 18px;
+    }
+
+    .locatie a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        cursor:pointer;
+    }
+    .locatie a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .continut {
+        cursor:default;
+    }
+}
+
+.locatie a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.maps-google iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/*sectiunea de footer*/
+
+.footer {
+    margin-bottom:0;
+    width: 100vw;
+    padding-top: 10px;
+    height:fit-content;
+    background-color: black;
+    color: white;
+}
+
+.follow{
+    font-size: clamp(20px, 5vw,40px);
+    margin-left: 15px;
+    text-align:left;
+    width: fit-content;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    margin-top: 10px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.footer img {
+    width:clamp(40px,5vw,60px);
+}
+
+.autor {
+    margin-top: 42px;
+    font-size:clamp(20px,4vw,30px);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
