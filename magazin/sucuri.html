@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="shaorma.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png/jpeg" href="tei.png">
+    <script src="https://kit.fontawesome.com/e313640c27.js" crossorigin="anonymous"></script>
+    <title>Shop</title>
+</head>
+<body>
+        
+<header class="header">
+    <div class="rama">
+        <img src="tei.png" class="logo" height="100">
+    </div>
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li onclick=CloseSideBar()><a href="#"><i id="inchide-sidebar"class="fa-solid fa-x"></i></a></li>
+            <li><a href="acasa.html"><i class="fa-solid fa-house"></i>Acasa</a></li>
+            <li><a href="despre-noi.html"><i class="fa-solid fa-address-card"></i></i>Despre Noi</a></li>
+            <li><a href="produse.html"><i class="fa-solid fa-pizza-slice"></i>Produse</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+
+        </ul>
+        <ul class="navbar-list">
+            <li class="HideOnMobile"><a href="acasa.html"><i class="fa-solid fa-house"></i>Acasa</a></li>
+            <li class="HideOnMobile"><a href="despre-noi.html"><i class="fa-solid fa-address-card"></i></i>Despre Noi</a></li>
+            <li class="HideOnMobile"><a href="produse.html"><i class="fa-solid fa-pizza-slice"></i>Produse</a></li>
+            <li class="HideOnMobile"><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+        </ul>
+        
+    </nav>
+    <li onclick=ShowSideBar()><a href="#"><i id="deschide-sidebar" class="fa-solid fa-bars"></i></a></li>
+</header>
+
+<script>
+    function ShowSideBar () {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function CloseSideBar () {
+        const sidebar = document.querySelector ('.sidebar')
+        sidebar.style.display =  'none'
+    }
+</script>
+
+
+<div class="sub-body">
+    <img src="fundal-meniu.png" class="fundal">
+
+
+<div class="titlu">
+    <a href="produse.html">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
+    <span class="titlu-meniu">
+        Bauturi
+    </span>
+</div>
+
+<div class="container-main">
+    <div class="container-sucuri">
+       <div class="continut-sucuri"> Apa Plata - 8 RON</div>
+       <div class="continut-sucuri"> Apa Minerala - 8 RON</div>
+       <div class="continut-sucuri"> Pepsi - 10 RON</div>
+       <div class="continut-sucuri"> Pepsi Max - 10 RON</div>
+       <div class="continut-sucuri"> Ayran - 12 RON</div>
+       <div class="continut-sucuri"> Red Bull - 15 RON</div>
+    </div>
+</div>
+
+</div>
+
+
+
+<div class="footer">
+
+    <div class="follow">
+        <div class="text-follow">
+            Umareste-ne si pe
+        </div>
+        <div class="icons">
+            
+        <a id="facebook" href="https://www.facebook.com/people/La-Tei/61550769527919/" target="_blank">
+            <img src="facebook.png">
+        </a>
+
+        <a id="tik-tok" href="#">
+            <img src="tik-tok.png">
+        </a>
+        
+        <a id="instagram" href="#">
+            <img src="instagram.png" width="100px">
+        </a>
+        </div>
+    </div> 
+    <div class="autor">
+        © Created by Dinu George
+    </div>
+</div>
