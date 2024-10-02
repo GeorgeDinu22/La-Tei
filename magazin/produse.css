@@ -153,6 +153,14 @@ body {
 }
 
 
+@media (max-width:600px) {
+    .header {
+        height: 100px;
+    }
+    .logo {
+        width: 120px;
+    }
+}
 
 @media (min-width:500px) {
     .sidebar li a {
