@@ -1,8 +1,0 @@
-body {
-    margin: 0;
-}
-.box {
-    display:inline-flex;
-    background-color: red;
-    gap: 10px;
-}
