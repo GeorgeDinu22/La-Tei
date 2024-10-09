@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-tanganu-acasa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e313640c27.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png/jpeg" href="tei.png">
+    <title>La Tei</title>
+</head>
+<body>
+        
+    <ul class="sidebar">
+        <li onclick=CloseSideBar()><a href="#"><i id="inchide-sidebar"class="fa-solid fa-x"></i></a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Acasa</a></li>
+        <li><a href="despre-noi.html"><i class="fa-solid fa-address-card"></i></i>Despre Noi</a></li>
+        <li><a href="produse.html"><i class="fa-solid fa-pizza-slice"></i>Produse</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+
+    </ul>
+<div class="main-content">
+
+<header class="header">
+    <div class="rama">
+        <img src="tei.png" class="logo" height="100">
+    </div>
+    <nav class="navbar">
+       
+        <ul class="navbar-list">
+            <li class="HideOnMobile"><a href="index.html"><i class="fa-solid fa-house"></i>Acasa</a></li>
+            <li class="HideOnMobile"><a href="despre-noi.html"><i class="fa-solid fa-address-card"></i></i>Despre Noi</a></li>
+            <li class="HideOnMobile"><a href="produse.html"><i class="fa-solid fa-pizza-slice"></i>Produse</a></li>
+            <li class="HideOnMobile"><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+        </ul>
+        
+    </nav>
+    <li onclick=ShowSideBar()><a href="#"><i id="deschide-sidebar" class="fa-solid fa-bars"></i></a></li>
+</header>
+
+<script>
+    function ShowSideBar () {
+        const sidebar = document.querySelector('.sidebar')
+        const rotate = document.getElementById ('inchide-sidebar')
+        const body =document.querySelector('.main-content')
+        body.classList.add('blur');
+        sidebar.classList.add('open');
+        rotate.classList.remove('rotate');
+    }
+    function CloseSideBar () {
+        const rotate = document.getElementById ('inchide-sidebar')
+        const sidebar = document.querySelector ('.sidebar')
+        const body =document.querySelector('.main-content')
+        body.classList.remove('blur');
+        sidebar.classList.remove('open');
+        rotate.classList.add('rotate');
+    }
+</script>
+
+<div class="sub-body1">
+
+<div class="box1">
+    <h1 class="titlu">
+        Bine ați venit la Shaormeria Tei, locul unde gusturile autentice și ingredientele proaspete se îmbină pentru a crea cele mai savuroase preparate din oraș! 
+    </h1>
+    
+</div>
+</div>
+
+<div class="sub-body2">
+<div class="container-best">
+    <a href="strips.html#mixt">
+ <div class="best-seller">
+    <div class="meniu-mixt">
+        Descopera Best Seller-ul Nostru
+    </div>
+ </div>
+</a>
+</div>
+</div>
+
+
+<div class="titlu-galerie">
+    Bucataria Noastra
+</div>
+
+<div class="sub-body4">
+
+    <div class="coloana1">
+        <img src="poze.galerie/poza1.png" >
+        <img src="poze.galerie/poza2.png" >
+    </div>
+
+    <div class="coloana2">
+        <img src="poze.galerie/poza3.png" >
+        <img src="poze.galerie/poza4.png" >
+    </div>
+
+    <div class="coloana3">
+        <img src="poze.galerie/poza5.png" >
+        <img src="poze.galerie/poza6.png" >
+    </div>
+</div>
+
+<div class="sub-body3">
+   
+    <div class="zona1">
+    <i class="fa-solid fa-phone"></i>
+    </div>
+
+    <div class="zona2">
+    Asteptam Comanda Ta! <br>
+    <a href="tel:0733782872">
+        0733782872
+    </a>
+    </div>
+
+    <div class="zona3">
+        <i class="fa-solid fa-phone"></i>
+    </div>
+
+    
+</div>
+
+<div class="sub-body5">
+    <div class="review">
+        Ce Spun Clientii Nostri
+    </div>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-676a21fc-3771-4770-aad6-7acbdc7e1098" data-elfsight-app-lazy></div>
+
+</div>
+
+
+<div class="footer">
+
+    <div class="follow">
+        <div class="text-follow">
+            Umareste-ne si pe
+        </div>
+        <div class="icons">
+            
+        <a id="facebook" href="https://www.facebook.com/people/La-Tei/61550769527919/" target="_blank">
+            <img src="facebook.png">
+        </a>
+
+        <a id="tik-tok" href="#">
+            <img src="tik-tok.png">
+        </a>
+        
+        <a id="instagram" href="#">
+            <img src="instagram.png" width="100px">
+        </a>
+        </div>
+    </div> 
+    <div class="autor">
+        © Created by Dinu George
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
